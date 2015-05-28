@@ -23,8 +23,8 @@ ln -s /media/Storage/Dockerfiles/ /var/lib/docker
 #Check for any errors and repair devicemapper metadata if needed.
 #This will fix the errors like:
 #Error response from daemon: Error running DeviceCreate (createSnapDevice) dm_task_run failed errors
-thin_check /home/_varlibdockerfiles/devicemapper/devicemapper/metadata
-thin_check --clear-needs-check-flag /home/_varlibdockerfiles/devicemapper/devicemapper/metadata
+thin_check /media/Storage/Dockerfiles/devicemapper/devicemapper/metadata
+thin_check --clear-needs-check-flag /media/Storage/Dockerfiles/devicemapper/devicemapper/metadata
 #Start Docker again
 systemctl start docker.service
 ```
